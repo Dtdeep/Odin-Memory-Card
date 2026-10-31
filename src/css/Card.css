@@ -1,0 +1,17 @@
+.cardDiv {
+  background-color: pink;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-height: 300px;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: center;
+}

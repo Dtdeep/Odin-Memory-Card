@@ -1,16 +1,30 @@
-# React + Vite
+# Pseudo Code
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+There will be an array of Uma-musume names 24 names in total. (Names should be descriptive so that Giphy knows them accurately)
+An algorithm will randomly choose 12 names
+Then I will fetch an image or GIF from Giphy based on the name
 
-Currently, two official plugins are available:
+The 12 names will be used to fetch GIF from giphy
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Randomly render the 12 card components
 
-## React Compiler
+#Components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- App component pieces them all together.
+  Will send the onClick event to the Main component, unto the card component
 
-## Expanding the ESLint configuration
+- Header Component which has the
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. name of the game,
+2. score and
+3. best score
+   This component is controlled by the root or App parent component where the parent will store its state which will be the currentScore and bestScore.
+
+- Main Component which will have:
+
+1. Description on how to play the game
+2. The 12 card components
+   I think diria nice ibutang ang logic sa pag randomize sa placement sa card components.
+
+- Card Component- which will have the GIF or image and the name of the Uma
+  The main component will provide
