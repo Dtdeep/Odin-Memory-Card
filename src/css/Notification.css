@@ -1,0 +1,21 @@
+.messageContainer {
+  height: 0px;
+  position: sticky;
+  top: 10px;
+  h3 {
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: transition-transparent;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes transition-transparent {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
