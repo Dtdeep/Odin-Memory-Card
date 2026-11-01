@@ -1,0 +1,10 @@
+.cardsContainer {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  min-height: 1000px;
+}
+
+.notificationContainer {
+  position: relative;
+}
